@@ -1,0 +1,50 @@
+name: grill_house
+description: "Grill House"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Utils
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.3.2
+  intl: ^0.20.2
+
+  # Images & UI Components
+  cached_network_image: ^3.4.1
+  carousel_slider: ^5.1.1
+  dropdown_button2: ^2.3.9
+  data_table_2: ^2.6.0
+
+  # Charts (FIXED version)
+  fl_chart: ^0.66.2
+
+  # Navigation & Web
+  go_router: ^16.3.0
+  url_strategy: ^0.3.0
+
+  # Modal
+  wolt_modal_sheet: ^0.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# 🔥 IMPORTANT FIX FOR Matrix4 ERROR
+dependency_overrides:
+  vector_math: ^2.1.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/profile_img.png
+    - assets/favicon.png
